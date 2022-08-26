@@ -5614,6 +5614,7 @@ html [class*='section-'].section-bottom-0 {
 		bottom: -100px;
 		top: -100px;
 		animation: bunner-img 10s infinite;
+		height: auto;
 	}
 }
 
@@ -5625,6 +5626,7 @@ html [class*='section-'].section-bottom-0 {
 
 .section-main-bunner .main-bunner-inner * + h1 {
 	margin-top: 30px;
+	
 }
 
 .section-main-bunner .main-bunner-inner .bunner-location {
