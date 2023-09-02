@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>CONVERSOR DIRECCIONES URL</h1>
+    <div style="display: flex; justify-content: center">
+      <input id="texto" type="text" size="80" />
+      <button onclick="gfg_Run()" style="padding: 2%">Formatear</button>
+    </div>
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <input
+      id="valor_total"
+      type="text"
+      name=""
+      id=""
+      size="99"
+      style="padding: 5%; text-align: center; font-size: 30px"
+    />
+  </body>
+  <script>
+    let total = "";
+    let extension = ".html";
+    function gfg_Run() {
+      let str = document.getElementById("texto").value;
+      let strFinal = "";
+      let valor_total = document.getElementById("valor_total");
+      total = str.replace(/ /g, "_");
+      strFinal = total;
+      total = strFinal.replace("ñ", "n");
+      total += extension;
+      total = total.toLowerCase()
+      valor_total.value = total;
+      console.log(total);
+      //Copiar
+      valor_total.select();
+      document.execCommand("copy");
+
+    }
+  </script>
+</html>

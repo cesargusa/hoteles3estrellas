@@ -1,0 +1,4 @@
+User-agent:*
+Disallow: /landing-page/landing-page-prueba.html
+Disallow: /zaragoza/index.html
+Sitemap: https://hotelestresestrellas.pro/sitemap.xml

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <title>Hotel de Prueba</title>
+</head>
+
+<body>
+
+    <head>
+        <div class="menu">
+            <h1 id="titulo-hotel"></h1>
+
+        </div>
+
+    </head>
+
+
+
+    <div id="fondo" class="fondo">
+
+        <div style="margin: 5%;">
+
+            <div class="cat">
+                <img id="img"
+                    src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/54170447.jpg?k=4c66c685441b77477bc7fbcaad55dba14fcd52fff1a4d983d65251377f8dbc8e&o=&hp=1"
+                    alt="">
+
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    let pais = "España"
+    let ciudad = "Oropesa del Mar"
+    let tituloNombre = "Hotel Neptuno"
+    let header = tituloNombre + " - " + ciudad + " - " + pais
+    let imagen = "https://cf.bstatic.com/xdata/images/hotel/max1024x768/54171488.jpg?k=1602b3e348ba62dca3dbbf407e274024eda9f58de297cd27b9783711cf2e266d&o=&hp=1"
+    let titulo = document.getElementById('titulo-hotel').innerHTML = header;
+
+
+
+
+
+
+</script>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .menu {
+        text-align: center;
+        background-color: #003d8f;
+        color: white;
+        height: auto;
+        padding: 2%;
+        margin: 2%
+    }
+
+    .container {
+        margin: 5%;
+        display: flex;
+        justify-content: left;
+        flex-flow: row wrap;
+    }
+
+    #img {
+        max-width: 100%;
+        min-height: 100%;
+    }
+
+    .cat {
+        height: 200px;
+        width: 200px;
+        margin: 5%;
+        background-color: red;
+    }
+
+    .fondo {
+        background-color: blue;
+        display: flex;
+    }
+</style>
+
+</html>
