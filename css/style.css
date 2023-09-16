@@ -13656,21 +13656,6 @@ html .dtp .invisible {
 	visibility: hidden;
 }
 
-#bookingAffiliateWidget_22ea4926-0b32-4fa9-8aa3-abae4cf38006{
-	height: 8em !important;
-}
 
 
-/* Estilos para pantallas con un ancho menor de 1134px */
-@media (max-width: 1134px) {
-#bookingAffiliateWidget_22ea4926-0b32-4fa9-8aa3-abae4cf38006{
-	height: 17em !important;
-}
 
-}
-@media (max-width: 768px) {
-	#bookingAffiliateWidget_22ea4926-0b32-4fa9-8aa3-abae4cf38006{
-		height: 22em !important;
-	}
-	
-	}
