@@ -2,6 +2,8 @@
 <html class="wide wow-animation" lang="es">
 
 <head>
+  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>    <!-- Hotjar Tracking Code for Hoteles 3 Estrellas -->
+
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-178604131-19"></script>
   <script>
@@ -111,23 +113,9 @@
       <section class="section-transform-top">
         <div class="container">
           <div class="box-booking">
-            <ins class="bookingaff" data-aid="2271610" data-target_aid="2271610" data-prod="nsb" data-width="100%"
-              data-height="auto" data-lang="ualng">
-              <!-- Anything inside will go away once widget is loaded. -->
-              <a href="//www.booking.com?aid=2271610">Booking.com</a>
-            </ins>
-            <script type="text/javascript">
-              (function (d, sc, u) {
-                var s = d.createElement(sc), p = d.getElementsByTagName(sc)[0];
-                s.type = 'text/javascript';
-                s.async = true;
-                s.src = u + '?v=' + (+new Date());
-                p.parentNode.insertBefore(s, p);
-              })(document, 'script', '//cf.bstatic.com/static/affiliate_base/js/flexiproduct.js');
-            </script>
-            <style>
-
-            </style>
+            <script>
+              $('.box-booking').load('./partialViews/bookingSearch.html')
+          </script>
 
           </div>
         </div>
@@ -448,6 +436,8 @@
       </footer>
       <script src="js/core.min.js"></script>
       <script src="js/script.js"></script>
+      <script src="https://www.booking.com/affiliate/prelanding_sdk"></script>
+<script src="js/bookingSearch.js"></script>
 </body>
 
 </html>

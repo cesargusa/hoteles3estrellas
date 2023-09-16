@@ -2,6 +2,9 @@
 <html class="wide wow-animation" lang="en">
 
 <head>
+  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous"></script> <!-- Hotjar Tracking Code for Hoteles 3 Estrellas -->
+
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-178604131-19"></script>
   <script>
@@ -55,9 +58,7 @@
     </div>
   </div>
   <div class="page">
-    <!-- Page Header-->
     <header class="section page-header">
-      <!-- RD Navbar-->
       <div class="rd-navbar-wrap">
         <nav class="rd-navbar rd-navbar-classic" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed"
           data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static"
@@ -66,27 +67,16 @@
           data-xxl-stick-up-offset="46px" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true">
           <div class="rd-navbar-main-outer">
             <div class="rd-navbar-main">
-              <!-- RD Navbar Panel-->
               <div class="rd-navbar-panel">
-                <!-- RD Navbar Toggle-->
                 <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
-                <!-- RD Navbar Brand-->
                 <div class="rd-navbar-brand"><a href="#"><img src="images/logo/logo-final.png" alt="" width="100px"
                       height="57px" srcset="images/logo-default-280x113.png 2x" /></a></div>
               </div>
               <div class="rd-navbar-main-element">
                 <div class="rd-navbar-nav-wrap">
-                  <!-- RD Navbar Nav-->
                   <ul class="rd-navbar-nav">
                     <li class="rd-nav-item active"><a class="rd-nav-link" href="#">Inicio</a>
                     </li>
-                    <!-- <li class="rd-nav-item"><a class="rd-nav-link" href="about-us.html">About</a>
-
-                    </li>
-                    <li class="rd-nav-item"><a class="rd-nav-link" href="typography.html">Typography</a>
-                    </li>
-                    <li class="rd-nav-item"><a class="rd-nav-link" href="contacts.html">Contacts</a>
-                    </li> -->
                   </ul><a class="button button-white button-sm"
                     href="https://www.booking.com/hotel/es/hostal-costa-coruna-a-coruna.es.html?aid=7907403&no_rooms=1&group_adults=2&room1=A%2CA&label=hostal-costa-coruna-h3e"
                     target="_blank">Reservar Ahora</a>
@@ -99,7 +89,6 @@
         </nav>
       </div>
     </header>
-    <!-- Swiper-->
 
 
     <section class="section section-lg section-main-bunner section-main-bunner-filter text-center">
@@ -107,11 +96,6 @@
         style="background-image: url(&quot;images/banner/fondo-coruna.jpg&quot;); background-size: cover;"></div>
       <div class="main-bunner-inner">
         <div class="container">
-          <!-- <div class="box-default">
-            <h1 class="box-default-title">BIENVENIDO</h1>
-            <div class="box-default-decor"></div>
-            <p class="big box-default-text">Te ofrecemos las mejores reservas de Hoteles 3 Estrellas de todo el mercado.</p>
-          </div> -->
         </div>
       </div>
     </section>
@@ -119,24 +103,9 @@
       <section class="section-transform-top">
         <div class="container">
           <div class="box-booking">
-
-            <ins class="bookingaff" data-aid="2271610" data-target_aid="2271610" data-prod="nsb" data-width="100%"
-              data-height="100%" data-lang="ualng">
-              <!-- Anything inside will go away once widget is loaded. -->
-              <a href="//www.booking.com?aid=2271610">Booking.com</a>
-            </ins>
-            <script type="text/javascript">
-              (function (d, sc, u) {
-                var s = d.createElement(sc), p = d.getElementsByTagName(sc)[0];
-                s.type = 'text/javascript';
-                s.async = true;
-                s.src = u + '?v=' + (+new Date());
-                p.parentNode.insertBefore(s, p);
-              })(document, 'script', '//cf.bstatic.com/static/affiliate_base/js/flexiproduct.js');
+            <script>
+              $('.box-booking').load('./partialViews/bookingSearch.html')
             </script>
-            <style>
-
-            </style>
 
           </div>
         </div>
@@ -251,11 +220,6 @@
                           target="_blank">RESERVAR AHORA</a><br><a class="button hvr-bounce-to-right"
                           href="https://www.hotelscombined.es/Place/A_Coruna.htm?a_aid=228165&label=hostal-costa-coruña-h3e"
                           target='_blank' rel='nofollow'>VER MÁS OFERTAS</a><br>
-
-                        <!-- <h4 class="event-item-modern-title"></h4>
-                        <div class="event-item-modern-text">
-                         
-                        </div> -->
                       </div>
                     </div>
                   </div>
@@ -265,18 +229,21 @@
                         <div class="event-item-modern-text">
                           <img src="images/hotels/hostal-costa-coruña/hostal-costa-coruña-7.jpg"
                             alt="imagen-habitaciones-hostal-costa-coruna">
-                            <p>Las Habitaciones del Hostal Costa de Coruña se enceuntran en un perfecto estado, el suelo es de madera y cuentan
-                              con todo tipo de instalaiones.
-                            </p>
-                            <p>
-                              Cuentan con un baño bastante amplio y camas de matrimonio o individuales, las camas son muy comodas y las vistas
-                              que ofrece el Hostal son muy bonitas.
+                          <p>Las Habitaciones del Hostal Costa de Coruña se enceuntran en un perfecto estado, el suelo
+                            es de madera y cuentan
+                            con todo tipo de instalaiones.
+                          </p>
+                          <p>
+                            Cuentan con un baño bastante amplio y camas de matrimonio o individuales, las camas son muy
+                            comodas y las vistas
+                            que ofrece el Hostal son muy bonitas.
 
-                            </p>
-                            <p>
-                              Se encuentra en una muy buena localización de Coruña y es ideal para pasar un par de días por la zona y ver los increibles
-                              encantos que tiene esta ciudad.
-                            </p>
+                          </p>
+                          <p>
+                            Se encuentra en una muy buena localización de Coruña y es ideal para pasar un par de días
+                            por la zona y ver los increibles
+                            encantos que tiene esta ciudad.
+                          </p>
                           <a class="button hvr-rectangle-out"
                             href="https://www.booking.com/hotel/es/hostal-costa-coruna-a-coruna.es.html?aid=7907403&no_rooms=1&group_adults=2&room1=A%2CA&label=hostal-costa-coruna-h3e"
                             target="_blank">RESERVAR AHORA</a><br><a class="button hvr-bounce-to-right"
@@ -464,13 +431,13 @@
           <a href="//www.booking.com?aid=2271886">Booking.com</a>
         </ins>
         <script type="text/javascript">
-          (function (d, sc, u) {
-            var s = d.createElement(sc), p = d.getElementsByTagName(sc)[0];
-            s.type = 'text/javascript';
-            s.async = true;
-            s.src = u + '?v=' + (+new Date());
-            p.parentNode.insertBefore(s, p);
-          })(document, 'script', '//cf.bstatic.com/static/affiliate_base/js/flexiproduct.js');
+            (function (d, sc, u) {
+              var s = d.createElement(sc), p = d.getElementsByTagName(sc)[0];
+              s.type = 'text/javascript';
+              s.async = true;
+              s.src = u + '?v=' + (+new Date());
+              p.parentNode.insertBefore(s, p);
+            })(document, 'script', '//cf.bstatic.com/static/affiliate_base/js/flexiproduct.js');
         </script>
       </div>
       <section class="section-lg bg-default">
@@ -524,13 +491,6 @@
                 </div>
                 <div class="col-12">
                   <ul class="social-list">
-                    <!-- <li><a class="icon icon-sm icon-circle icon-circle-md icon-bg-white fa-facebook" href="#"></a></li>
-                    <li><a class="icon icon-sm icon-circle icon-circle-md icon-bg-white fa-instagram" href="#"></a></li>
-                    <li><a class="icon icon-sm icon-circle icon-circle-md icon-bg-white fa-twitter" href="#"></a></li>
-                    <li><a class="icon icon-sm icon-circle icon-circle-md icon-bg-white fa-youtube-play" href="#"></a>
-                    </li>
-                    <li><a class="icon icon-sm icon-circle icon-circle-md icon-bg-white fa-pinterest-p" href="#"></a>
-                    </li> -->
                   </ul>
                 </div>
               </div>
@@ -552,6 +512,8 @@
     </div>
     <script src="js/core.min.js"></script>
     <script src="js/script.js"></script>
+    <script src="https://www.booking.com/affiliate/prelanding_sdk"></script>
+    <script src="js/bookingSearch.js"></script>
 </body>
 
 </html>

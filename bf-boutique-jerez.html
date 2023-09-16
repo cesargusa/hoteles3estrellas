@@ -2,6 +2,8 @@
 <html class="wide wow-animation" lang="es">
 
 <head>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>    <!-- Hotjar Tracking Code for Hoteles 3 Estrellas -->
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-178604131-19"></script>
     <script>
@@ -99,19 +101,8 @@
             <section class="section-transform-top">
                 <div class="container">
                     <div class="box-booking">
-                        <ins class="bookingaff" data-aid="2271610" data-target_aid="2271610" data-prod="nsb"
-                            data-width="100%" data-height="auto" data-lang="auto">
-                            <!-- Anything inside will go away once widget is loaded. -->
-                            <a href="//www.booking.com?aid=2271610">Booking.com</a>
-                        </ins>
-                        <script type="text/javascript">
-                            (function (d, sc, u) {
-                                var s = d.createElement(sc), p = d.getElementsByTagName(sc)[0];
-                                s.type = 'text/javascript';
-                                s.async = true;
-                                s.src = u + '?v=' + (+new Date());
-                                p.parentNode.insertBefore(s, p);
-                            })(document, 'script', '//cf.bstatic.com/static/affiliate_base/js/flexiproduct.js');
+                        <script>
+                            $('.box-booking').load('./partialViews/bookingSearch.html')
                         </script>
                     </div>
                 </div>
@@ -201,16 +192,6 @@
 
             <br>
             <br>
-            <!-- <div style="  position: relative;">
-                <div style="margin-left: 10%;margin-right: 10%;">
-
-                    <script
-                        src="https://www.travelpayouts.com/chansey/iframe.js?v=1&marker=291568&trs=35676&host=search.hotellook.com&locale=es&currency=eur&nobooking=&powered_by=true&hotel_id=284546"
-                        charset="utf-8" async></script>
-
-                </div>
-            </div> -->
-
 
         </section>
         <br>
@@ -259,20 +240,11 @@
                 })(document, 'script', '//cf.bstatic.com/static/affiliate_base/js/flexiproduct.js');
             </script>
         </div>
-        <!-- <div style="width: 70%; margin-left: 15%; margin-right: 15%;">
-            <a class="button hvr-rectangle-out" id="boton-resevar-abajo"
-                href="https://www.booking.com/hotel/es/hostal-galicia-villardefrades.es.html?aid=7907403&no_rooms=1&group_adults=2&room1=A%2CA&label=h3e-hostal-galicia-booking"
-                target="_blank" rel='nofollow'>Reservar Ahora</a><a class="button hvr-bounce-to-right"
-                href='https://www.booking.com/searchresults.es.html?city=-390625&aid=7907403&no_rooms=1&group_adults=2&room1=A%2CA&label=mas-ofertas-hostal-luis-xv-booking-h3e'
-                target='_blank' rel='nofollow'>Mas Ofertas</a>
-        </div> -->
-
-
         <section class="section-lg bg-default">
             <div class="container wow-outer">
 
             </div>
-            <!-- Page Footer-->
+
             <div>
                 <a href="https://www.booking.com/hotel/es/hostal-galicia-villardefrades.es.html?aid=7907403&no_rooms=1&group_adults=2&room1=A%2CA&label=h3e-hostal-galicia-booking"
                     class="btn-flotante" target="_blank" rel='nofollow'>Reservar</a>
@@ -280,38 +252,13 @@
             </div>
 
             <footer class="section footer-minimal context-dark">
-                <!-- <h4>Categorias</h4>
-      <div style="display: flex; flex-flow: row wrap;">
-        <div style="margin-left: 5%;">
-          <a href="https://www.hotelestresestrellas.pro/hostal-costa-coruna.html">Hotel Costa Coruña</a>
-          <a href="https://www.hotelestresestrellas.pro/palacio-conde-de-cabra-granada.html">Palacio Conde de Cabra</a>
-        </div>
-       
-
-      </div> -->
                 <div class="container wow-outer">
                     <div class="wow fadeIn">
                         <div class="row row-60">
                             <div class="col-12"><a href="index.html"><img src="images/logo/logo-final.png" alt=""
                                         width="140" height="57" srcset="images/logo/logo-final.png 2x" /></a></div>
-                            <!-- <div class="col-12">
-                  <ul class="footer-minimal-nav">
-                    <li><a href="#">Menu</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="contacts.html">Contacts</a></li>
-                    <li><a href="#">Gallery</a></li>
-                    <li><a href="about-us.html">About</a></li>
-                  </ul>
-                </div> -->
                             <div class="col-12">
                                 <ul class="social-list">
-                                    <!-- <li><a class="icon icon-sm icon-circle icon-circle-md icon-bg-white fa-facebook" href="#"></a></li>
-                    <li><a class="icon icon-sm icon-circle icon-circle-md icon-bg-white fa-instagram" href="#"></a></li>
-                    <li><a class="icon icon-sm icon-circle icon-circle-md icon-bg-white fa-twitter" href="#"></a></li>
-                    <li><a class="icon icon-sm icon-circle icon-circle-md icon-bg-white fa-youtube-play" href="#"></a>
-                    </li>
-                    <li><a class="icon icon-sm icon-circle icon-circle-md icon-bg-white fa-pinterest-p" href="#"></a>
-                    </li> -->
                                 </ul>
                             </div>
                         </div>
@@ -333,6 +280,8 @@
             </footer>
             <script src="js/core.min.js"></script>
             <script src="js/script.js"></script>
+            <script src="https://www.booking.com/affiliate/prelanding_sdk"></script>
+<script src="js/bookingSearch.js"></script>
 </body>
 
 </html>

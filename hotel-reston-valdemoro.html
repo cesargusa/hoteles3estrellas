@@ -2,6 +2,10 @@
 <html class="wide wow-animation" lang="es">
 
 <head>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <!-- Hotjar Tracking Code for Hoteles 3 Estrellas -->
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-178604131-19"></script>
     <script>
@@ -99,19 +103,8 @@
             <section class="section-transform-top">
                 <div class="container">
                     <div class="box-booking">
-                        <ins class="bookingaff" data-aid="2271610" data-target_aid="2271610" data-prod="nsb"
-                            data-width="100%" data-height="auto" data-lang="auto">
-                            <!-- Anything inside will go away once widget is loaded. -->
-                            <a href="//www.booking.com?aid=2271610">Booking.com</a>
-                        </ins>
-                        <script type="text/javascript">
-                            (function (d, sc, u) {
-                                var s = d.createElement(sc), p = d.getElementsByTagName(sc)[0];
-                                s.type = 'text/javascript';
-                                s.async = true;
-                                s.src = u + '?v=' + (+new Date());
-                                p.parentNode.insertBefore(s, p);
-                            })(document, 'script', '//cf.bstatic.com/static/affiliate_base/js/flexiproduct.js');
+                        <script>
+                            $('.box-booking').load('./partialViews/bookingSearch.html')
                         </script>
                     </div>
                 </div>
@@ -193,9 +186,8 @@
                 </div>
             </div>
             <div style="text-align: center;">
-                <span>Imagenes sacadas de <a
-                        href="https://www.booking.com?aid=2286606"
-                        rel="nofollow" target="_blank">Booking</a></span>
+                <span>Imagenes sacadas de <a href="https://www.booking.com?aid=2286606" rel="nofollow"
+                        target="_blank">Booking</a></span>
 
             </div>
 
@@ -230,13 +222,13 @@
                 <a href="//www.booking.com?aid=2286606">Booking.com</a>
             </ins>
             <script type="text/javascript">
-                (function (d, sc, u) {
-                    var s = d.createElement(sc), p = d.getElementsByTagName(sc)[0];
-                    s.type = 'text/javascript';
-                    s.async = true;
-                    s.src = u + '?v=' + (+new Date());
-                    p.parentNode.insertBefore(s, p);
-                })(document, 'script', '//cf.bstatic.com/static/affiliate_base/js/flexiproduct.js');
+                    (function (d, sc, u) {
+                        var s = d.createElement(sc), p = d.getElementsByTagName(sc)[0];
+                        s.type = 'text/javascript';
+                        s.async = true;
+                        s.src = u + '?v=' + (+new Date());
+                        p.parentNode.insertBefore(s, p);
+                    })(document, 'script', '//cf.bstatic.com/static/affiliate_base/js/flexiproduct.js');
             </script>
         </div>
 
@@ -244,8 +236,9 @@
         <div class="mapa" style="margin: 3% 3% 3% 3%;">
             <ins class="bookingaff" data-aid="2286605" data-target_aid="2286605" data-prod="map" data-width="100%"
                 data-height="590" data-lang="ualng" data-dest_id="0" data-dest_type="landmark"
-                data-latitude="41.7230911" data-longitude="-5.2524867" data-landmark_name="Hotel Reston Valdemoro Madrid"
-                data-mwhsb="0" data-address="Hotel Reston Valdemoro Madrid, Villardefrades, Spain" data-zoom="10">
+                data-latitude="41.7230911" data-longitude="-5.2524867"
+                data-landmark_name="Hotel Reston Valdemoro Madrid" data-mwhsb="0"
+                data-address="Hotel Reston Valdemoro Madrid, Villardefrades, Spain" data-zoom="10">
                 <!-- Anything inside will go away once widget is loaded. -->
                 <a href="//www.booking.com?aid=2286605">Booking.com</a>
             </ins>
@@ -333,6 +326,8 @@
             </footer>
             <script src="js/core.min.js"></script>
             <script src="js/script.js"></script>
+            <script src="https://www.booking.com/affiliate/prelanding_sdk"></script>
+            <script src="js/bookingSearch.js"></script>
 </body>
 
 </html>
